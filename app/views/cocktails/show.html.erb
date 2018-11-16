@@ -3,8 +3,12 @@
   <div class="jumbo">
 <h2><%= @cocktail.name.capitalize %></h1>
  <% @cocktail.doses.each do |d|  %>
- <p><%= d.ingredient.name.capitalize %> (<%= d.description %>) <%= link_to '🧨', dose_path(d), method: :delete %></p>
+
+ <p style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)),
+         url('<%= cl_image_path @cocktail.photo, height: 150, width: 150, crop: :fill %>')">
+ <%= d.ingredient.name.capitalize %> (<%= d.description %>) <%= link_to '🧨', dose_path(d), method: :delete %></p>
  <% end  %>
+
 
 <%= link_to 'Add ingredient', new_cocktail_dose_path(@cocktail.id), class:"btn-medium-contrast" %>
 </div>
