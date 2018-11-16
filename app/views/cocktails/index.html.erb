@@ -4,15 +4,22 @@
 
 <h1 id="pulsate">LocoCocktail</h1>
 
-<div id="cocktail-li"><%= link_to 'Add Cocktail', new_cocktail_path, class: 'add-cocktail' %></div>
+<div id="cocktail-link"><%= link_to 'Add Cocktail', new_cocktail_path, class: 'add-cocktail' %>
 
-
-  <div class="container flex">
+</div>
+        <div class="container flex">
     <% @cocktails.each do |c|  %>
-    <div class="cocktail-card">
+    <div class="cocktail-card" style="background-image: url('<%= cl_image_path c.photo, crop: :fit %>');">
     <h4><b><%= c.name.capitalize %></b></h4>
-    <p><%= link_to "🧐", cocktail_path(c)%></p>
+    <p><%= link_to "Add Ingredients🧐", cocktail_path(c)%></p>
     </div>
     <% end  %>
   </div>
+
+
+
+
+
+
+
 

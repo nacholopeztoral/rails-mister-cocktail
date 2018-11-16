@@ -1,6 +1,7 @@
 class CocktailsController < ApplicationController
   def index
     @cocktails = Cocktail.all #model name is task
+    @cocktail = Cocktail.new
   end
 
   def show

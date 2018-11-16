@@ -10,3 +10,12 @@
 console.log('Hello World from Webpacker')
 import 'bootstrap';
 
+function myFunction() {
+  container.setAttribute("id", "nacho");
+
+}
+
+const container = document.getElementById("containers");
+const c = document.getElementById("click1");
+c.addEventListener("click", myFunction);
+

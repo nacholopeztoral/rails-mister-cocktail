@@ -35,6 +35,17 @@ h1#pulsate {
     -webkit-animation-iteration-count: infinite;
 
 }
+h1#pulsates {
+  text-align: center;
+  font-size: 30px;
+  font-family: 'Futura';
+  color: #fff;
+  text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 20px #ff0080, 0 0 30px #ff0080, 0 0 40px #ff0080, 0 0 55px #ff0080, 0 0 75px #ff0080;
+  text-align: center;
+    -webkit-animation: pulsate 3s ease-out;
+    -webkit-animation-iteration-count: infinite;
+
+}
 
 @-webkit-keyframes #pulsate {
     0% {
@@ -49,6 +60,7 @@ h1#pulsate {
 
 }
 div#cocktail-link{
+  text-align: center;
   a.add-cocktail {
   text-align: center;
   font-family: 'Futura';
@@ -74,7 +86,7 @@ a {
 div.cocktail-card {
   width: 30%;
     height: 200px;
-    background-image: url("https://images.unsplash.com/photo-1537185526994-a8714f82d3ac?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=73928068befceff38e0c0d74beca79ce&auto=format&fit=crop&w=668&q=80");
+    // background-image: url("https://images.unsplash.com/photo-1537185526994-a8714f82d3ac?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=73928068befceff38e0c0d74beca79ce&auto=format&fit=crop&w=668&q=80");
 background-size: cover;
     padding: 20px;
     margin: 20px;
@@ -86,18 +98,32 @@ background-size: cover;
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
 }
 .jumbo {
-  margin-top: 200px;
+margin-top: 200px;
     padding: 50px;
     border: 1px solid;
     /* border-color: pink; */
-    background-color: rgba(215,231,235, 0.9);
+    background-color: rgba(215, 231, 280, 1.9);
     color: black;
+    border-radius: 5px;
 }
-
+.containers {
+  display:flex;
+  justify-content: center;
+   margin-top: 100px;
+    width: 50%;
+  // text-align: -webkit-center;
+  // background-image: url('https://images.unsplash.com/photo-1536626064922-49e65368b27d?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=8466e8bcd5abca2ca82b104353b22532&auto=format&fit=crop&w=668&q=80');
+}
+div.containex {
+    margin-top: 100px;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+}
 
 .container.flex {
   display: flex;
-    margin-top: 400px;
+    margin-top: 200px;
 }
 .btn-medium {
   color: white;
