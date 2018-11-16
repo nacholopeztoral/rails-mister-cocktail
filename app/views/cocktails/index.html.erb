@@ -1,7 +1,18 @@
-<div class="logo"></div>
-<div class="container">
-  <% @cocktails.each do |c|  %>
-  <p><%= link_to c.name.capitalize, cocktail_path(c)%></p>
-  <% end  %>
-  <h4><%= link_to "✚",  new_cocktail_path %></h4>
-</div>
+
+
+
+
+<h1 id="pulsate">LocoCocktail</h1>
+
+<div id="cocktail-link"><%= link_to 'Add Cocktail', new_cocktail_path, class: 'add-cocktail' %></div>
+
+
+  <div class="container flex">
+    <% @cocktails.each do |c|  %>
+    <div class="cocktail-card">
+    <h4><b><%= c.name.capitalize %></b></h4>
+    <p><%= link_to "🧐", cocktail_path(c)%></p>
+    </div>
+    <% end  %>
+  </div>
+

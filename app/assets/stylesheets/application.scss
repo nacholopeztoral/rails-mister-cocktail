@@ -16,88 +16,118 @@
 
 //body
 body {
-  font-family: 'Nanum Myeongjo', serif;
+  // background-image: url('https://images.unsplash.com/photo-1530305408560-82d13781b33a?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=7a719053d1686cebff01878c0b75e087&auto=format&fit=crop&w=1652&q=80');
+  background-image: url('https://images.unsplash.com/photo-1530482817083-29ae4b92ff15?ixlib=rb-0.3.5&s=ee074c2541defcca24f770ef1600bcd4&auto=format&fit=crop&w=1651&q=80');
+background-attachment: fixed;
+background-size: cover !important;
 font-weight: bolder;
+color: white;
+
+}
+h1#pulsate {
+  text-align: center;
+  font-size: 90px;
+  font-family: 'Futura';
+  color: #fff;
+  text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 20px #ff0080, 0 0 30px #ff0080, 0 0 40px #ff0080, 0 0 55px #ff0080, 0 0 75px #ff0080;
+  text-align: center;
+    -webkit-animation: pulsate 3s ease-out;
+    -webkit-animation-iteration-count: infinite;
+
 }
 
-// Navbar
-.navbar-wagon {
-  box-shadow: 0 1px 5px 0 rgba(0,0,0,0.07),0 1px 0 0 rgba(0,0,0,0.03);
-  background: transparent;
-  transition: all 0.3s ease;
-  height: 70px;
-  padding: 0px 30px;
+@-webkit-keyframes #pulsate {
+    0% {
+        opacity: 0.5;
+    }
+    50% {
+        opacity: 1.0;
+    }
+    100% {
+        opacity: 0.5;
+    }
+
+}
+div#cocktail-link{
+  a.add-cocktail {
+  text-align: center;
+  font-family: 'Futura';
+  color: #fff;
+  text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 20px #ff0080, 0 0 30px #ff0080, 0 0 40px #ff0080, 0 0 55px #ff0080, 0 0 75px #ff0080;
+
+}
+
+}
+
+ul.block {
+  display: block
+
+}
+h3 {
+      text-align: center;
+    margin-top: 200px;
+
+}
+a {
+  color: black;
+}
+div.cocktail-card {
+  width: 30%;
+    height: 200px;
+    background-image: url("https://images.unsplash.com/photo-1537185526994-a8714f82d3ac?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=73928068befceff38e0c0d74beca79ce&auto=format&fit=crop&w=668&q=80");
+background-size: cover;
+    padding: 20px;
+    margin: 20px;
+    color: black;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+}
+.cocktail-card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+.jumbo {
+  margin-top: 200px;
+    padding: 50px;
+    border: 1px solid;
+    /* border-color: pink; */
+    background-color: rgba(215,231,235, 0.9);
+    color: black;
+}
+
+
+.container.flex {
   display: flex;
-  align-items: center;
-  justify-content: space-between;
+    margin-top: 400px;
 }
-
-/* Logo */
-.navbar-wagon-brand img {
-  height: 50px;
+.btn-medium {
+  color: white;
+  border: 1px solid white;
+  padding: 10px 15px;
+  border-radius: 50px;
+  font-weight: lighter;
+  opacity: 1;
 }
-
-
-/* Right section */
-.navbar-wagon-right {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-/* Basic navbar item */
-.navbar-wagon-item {
-  cursor: pointer;
-  padding: 0 20px;
-}
-
-/* Navbar link */
-.navbar-wagon-link {
-  color: #616668;
-  font-size: 14px;
-}
-.navbar-wagon-link:hover {
-  color: #da552f;
+.btn-medium:hover {
+  opacity: 1;
   text-decoration: none;
+  color: pink;
+  border: 2px solid pink;
+}
+.btn-medium-contrast {
+      color: #333333;
+    border: 1px solid #333333;
+    padding: 10px 15px;
+  border-radius: 50px;
+  font-weight: lighter;
+  opacity: 1;
+}
+.btn-medium-contrast:hover {
+  opacity: 1;
+  text-decoration: none;
+  color: black;
+  border: 2px solid pink;
+}
+.jumbo h2 {
+  margin-bottom: 40px;
 }
 
-/* Dropdown menu */
-.navbar-wagon-dropdown-menu {
-  margin-top: 15px;
-  box-shadow: 1px 1px 4px #E6E6E6;
-  border-color: #E6E6E6;
-}
-.navbar-wagon-dropdown-menu li > a {
-  transition: color 0.3s ease;
-  font-weight: lighter !important;
-  color: #999999 !important;
-  font-size: 15px !important;
-  line-height: 22px !important;
-  padding: 10px 20px;
-}
-.navbar-wagon-dropdown-menu li > a:hover {
-  background: transparent !important;
-  color: black !important;
-}
-.navbar-wagon-dropdown-menu:before {
-  content: ' ';
-  height: 10px;
-  width: 10px;
-  position: absolute;
-  right: 10px;
-  top: -6px;
-  background-color: white;
-  transform: rotate(45deg);
-  border-left: 1px solid #E6E6E6;
-  border-top: 1px solid #E6E6E6;
-}
-/////////////////////
-// logo
-.logo {
-   // background-image: url('/assets/logo.png') !important;
-   background-size: cover !important;
-   background-size: contain !important;
-   background-repeat: no-repeat;
-   width: 600px;
-   height: 450px;
-}
